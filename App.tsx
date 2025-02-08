@@ -59,7 +59,13 @@ export default function App() {
           },
         })}>
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Shorts" component={ShortsScreen} options={{}} />
+        <Tab.Screen
+          name="Shorts"
+          component={ShortsScreen}
+          options={{
+            lazy: false,
+          }}
+        />
         <Tab.Screen name="Reward" component={RewardScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
